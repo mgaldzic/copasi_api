@@ -1,0 +1,8 @@
+FILE( GLOB MUPARSER_SRC ${COPASIAPI_SOURCE_DIR}/muparser/*.cpp )
+
+ADD_LIBRARY( muparser 
+#  SHARED
+  STATIC
+  ${MUPARSER_SRC} 
+)
+
