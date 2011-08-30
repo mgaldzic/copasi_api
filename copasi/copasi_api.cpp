@@ -2313,7 +2313,7 @@ struct GAData
 	tc_matrix * params;
 };
 
-static void InitializeGenome(GAGenome & x)
+ void InitializeGenome(GAGenome & x)
 {	
 	RealGenome & g = (RealGenome &)x;
 	GAData * data = (GAData*)(g.geneticAlgorithm()->userData());
