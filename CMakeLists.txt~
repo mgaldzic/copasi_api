@@ -39,6 +39,7 @@ INCLUDE_DIRECTORIES(
 #  Special compile flags for Qt
 #--------------------------------------------------------------------------
 #SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DQT_NO_DEBUG -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DQT_NO_DEBUG -DQT_CORE_LIB")
 
 #FIND_PACKAGE( Qt4 )
 
@@ -48,7 +49,7 @@ ADD_DEFINITIONS(${QT_DEFINITIONS})
 # Build only if the version of qt is newer than Qt4.5.
 #IF( QT4_FOUND AND QT_VERSION_MINOR GREATER 5)
 #  IF( QT_USE_FILE )
-#          SET( QT_USE_QTCORE TRUE )
+          SET( QT_USE_QTCORE TRUE )
 #	  SET( QT_USE_QTGUI FALSE )
 #	  SET( QT_USE_QTXML FALSE )
 #	  SET( QT_USE_QTOPENGL FALSE )

@@ -132,7 +132,7 @@ FILE( GLOB copasi_SRC_FILES
 	${COPASIAPI_SOURCE_DIR}/copasi/MIRIAM/WebServicesIssues/*.cpp
 	${COPASIAPI_SOURCE_DIR}/copasi/copasi_api.cpp
 	${COPASIAPI_SOURCE_DIR}/API/TC_structs.c
-	${COPASIAPI_SOURCE_DIR}/mtrand.c
+	${COPASIAPI_SOURCE_DIR}/c/mtrand.c
 )
 
 ADD_DEFINITIONS(-DHAVE_EXPAT_CONFIG_H)
@@ -177,7 +177,7 @@ ENDIF( WIN32 )
 #  COPASI api
 #----------------------------------
 
-OPTION( TEST_COPASI_API "test copasi api" OFF )
+OPTION( TEST_COPASI_API "test copasi api" ON )
 
 IF (TEST_COPASI_API)
   ADD_EXECUTABLE(copasi_api_test test_copasi.c)

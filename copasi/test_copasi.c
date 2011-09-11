@@ -6,7 +6,7 @@ copasi_model model1(); //oscillation
 copasi_model model2(); //positive feebdack gene regulation
 copasi_model model3();
 void eigen(copasi_model, const char*); //compute eigenvalues by changing parameters (similar to root-locus)
-
+ 
 int main()
 {
 	tc_matrix efm, output, params;
