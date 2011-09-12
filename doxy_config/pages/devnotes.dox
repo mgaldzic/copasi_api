@@ -1,0 +1,47 @@
+/*! \page devnotes Developer Notes copasi api v0.1
+
+
+
+\section sec_checkout Checkout Instructions
+
+-# Install <a href="http://git-scm.com/"> Git </a>
+-# Clone the project with Git by running In a directory of your choosing
+\code
+$ git clone git@github.com:mgaldzic/copasi_api.git
+\endcode
+or
+\code
+$ git clone git://github.com/mgaldzic/copasi_api
+\endcode
+
+-# Clean and Build
+-# run tests
+
+If for some reason that fails
+\section doc_sec Documentation
+
+\section sec_dl Download without SCM
+\htmlonly
+<li><p>
+        You can download the code for this project in either
+        <a href="http://github.com/mgaldzic/copasi_api/zipball/master">zip</a> or
+        <a href="http://github.com/mgaldzic/copasi_api/tarball/master">tar</a> formats.
+        </p>
+        <p>
+        <div class="code_download">
+        <a href="http://github.com/mgaldzic/copasi_api/zipball/master">
+            <img border="0" width="55" src="http://mgaldzic.github.com/copasi_api/documentation/pages/images/zip.png"></a>
+        <a href="http://github.com/mgaldzic/copasi_api/tarball/master">
+            <img border="0" width="55" src="http://mgaldzic.github.com/copasi_api/documentation/pages/images/tar.png"></a>
+         </div>
+        </p>
+\endhtmlonly
+
+
+\section sec_libs Required Libraries:
+
+- stuff
+
+
+
+*/
