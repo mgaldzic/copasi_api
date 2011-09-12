@@ -6,6 +6,10 @@
 
  - \ref tutorial - explains how to use copasi API
 
+\section source_sec Source Code Management
+
+ - <a href="https://github.com/mgaldzic/copasi_api">Source Code </a> - development repository
+
 
   \section doc_sec Documentation
    
@@ -32,13 +36,17 @@
 
  
   \section included_sec Libraries Used
-     - 
-     - <a href="http://www.netlib.org/lapack/">LAPACK</a> - implementation of <a href="http://semanticweb.com/empire-rdf-sparql-meet-jpa_b15617">JPA for RDF</a> (<a href="http://clarkparsia.com/">Clark & Parsia</a>)
-     - <a href="http://biojava.org/wiki/Main_Page">BioJava</a> - tools library for processing biological data (<a href="http://dx.doi.org/10.1093/bioinformatics/btn397">Holland, et al. 2008</a>)
-     - <a href="http://code.google.com/p/google-gson/">google-Gson</a> - JSON library (<a href="http://code.google.com/opensource/projects.html">Google</a>)
-     - <a href="http://commons.apache.org/io/index.html">Commons IO</a> - IO functionality (<a href="http://commons.apache.org/">Apache Commons</a>)
+     - <a href="http://www.netlib.org/lapack/">LAPACK</a> - implementation of routines for solving systems of simultaneous linear equations, least-squares solutions of linear systems of equations, eigenvalue problems, and singular value problems.
+     - <a href="http://muparser.sourceforge.net/">muParser</a> - a fast math parser library
+     - <a href="http://curl.haxx.se/">cURL</a> - client-side URL transfer library needed by raptor
+     - <a href="http://librdf.org/raptor/">Raptor RDF Syntax Library</a> - a set of parsers and serializers that generate Resource Description Framework (RDF) triples
+     - <a href="http://sbml.org/Software/libSBML">libSBML</a> - read, write, manipulate, translate, and validate SBML
+     - <a href="http://antimony.sourceforge.net/main.html">Antimony</a> - A modular human-readable, human-writeable model definition language
+     - <a href="http://sysbio.analogmachine.org">libstructural</a> - network structural analysis based on stoichiometry matrix
+     - <a href="http://www.copasi.org/">COPASI</a> -  simulation and analysis of biochemical networks and their dynamics
+
 
   \section thanks_sec Acknowledgements
-     - We would like to especially thank <a href="https://github.com/clarkparsia">Michael Grove</a> of Clark & Parsia, LLC for his help in applying the Empire framework to SBOL.
+     - We would like to especially thank. <<cite funding and other help here>>
 
  */
