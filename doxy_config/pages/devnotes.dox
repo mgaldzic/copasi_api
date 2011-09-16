@@ -1,7 +1,6 @@
 /*! \page devnotes Developer Notes copasi api v0.1
 
 
-
 \section sec_checkout Checkout Instructions
 
 -# Install <a href="http://git-scm.com/"> Git </a>
@@ -22,19 +21,41 @@ $ git clone git://github.com/mgaldzic/copasi_api
 $ git pull
 \endcode
 
-\section sec_checkout Checkin Instructions
+\section sec_checkin Checkin Instructions
 
 -# After you make a change commit and write a comment 
 \code
  git commit
 \endcode
-
--# If you want to update the github (remote) repo 
+-# If you want to update the github (remote) repo with your own code
 \code
- git push remote
+ git push origin
 \endcode
 
 \section doc_sec Documentation
+
+-# Create a directory for docs ie "copasi_api_docs" (outside of your git source repo dir)
+-# got to that directory we're going to make it into your gh-pages branch for doc publication
+\code
+git init
+\endcode
+
+-# in your git command line (ie git-bash) run fetch like this
+\code
+git fetch  https://mgaldzic@github.com/mgaldzic/copasi_api.git gh-pages:refs/remotes/origin/gh-pages
+\endcode
+
+-# edit some docs
+-# In doxy-wizard open copasi_api/doxy_config/config.Doxyfile
+-# point the Destination Directory at your 
+-# Run Doxygen and Show HTML output to check the results
+
+-# commit and push to github
+\code
+git commit
+git push --progress  "gh-pages" gh-pages:remotes/origin/gh-pages
+
+\endcode
 
 \section sec_dl Download without SCM
 \htmlonly
