@@ -17,7 +17,23 @@ $ git clone git://github.com/mgaldzic/copasi_api
 -# Clean and Build
 -# run tests
 
-If for some reason that fails
+-# When you need to update
+\code
+$ git pull
+\endcode
+
+\section sec_checkout Checkin Instructions
+
+-# After you make a change commit and write a comment 
+\code
+ git commit
+\endcode
+
+-# If you want to update the github (remote) repo 
+\code
+ git push remote
+\endcode
+
 \section doc_sec Documentation
 
 \section sec_dl Download without SCM
