@@ -4,7 +4,7 @@
 \section sec_checkout Checkout Instructions
 
 -# Install <a href="http://git-scm.com/"> Git </a>
--# Clone the project with Git by running In a directory of your choosing
+-# Clone the project with Git by running git clone in a directory were you want the git source repo "copasi_api" directory
 \code
 $ git clone git@github.com:mgaldzic/copasi_api.git
 \endcode
@@ -12,48 +12,55 @@ or
 \code
 $ git clone git://github.com/mgaldzic/copasi_api
 \endcode
-
 -# Clean and Build
 -# run tests
-
 -# When you need to update
 \code
 $ git pull
 \endcode
 
+\section sec_iisues Issues Management
+
+-# Issues are managed using the <a href="https://github.com/mgaldzic/copasi_api/issues">Github Issues</a> management system
+
 \section sec_checkin Checkin Instructions
 
+-# Signup on Github: <a href="https://github.com/signup">https://github.com/signup</a>
+-# E-mail \c mgaldzic [at] \c uw [dot] \c edu and ask for permissions
 -# After you make a change commit and write a comment 
 \code
  git commit
 \endcode
 -# If you want to update the github (remote) repo with your own code
 \code
- git push origin
+ git push --progress "origin" master:master
 \endcode
 
 \section doc_sec Documentation
 
+-# Get <a href="http://www.stack.nl/~dimitri/doxygen/download.html#latestsrc">doxygen</a> - using its doxywizard GUI open copasi_api/doxy_config/config.Doxyfile
 -# Create a directory for docs ie "copasi_api_docs" (outside of your git source repo dir)
--# got to that directory we're going to make it into your gh-pages branch for doc publication
+-# Go to the copasi_api_docs dir. We're going to make it into your gh-pages branch for doc publication
 \code
 git init
 \endcode
 
--# in your git command line (ie git-bash) run fetch like this
+-# In your git command line (ie git-bash) run fetch like this
 \code
 git fetch  https://mgaldzic@github.com/mgaldzic/copasi_api.git gh-pages:refs/remotes/origin/gh-pages
 \endcode
-
--# edit some docs
--# In doxy-wizard open copasi_api/doxy_config/config.Doxyfile
--# point the Destination Directory at your 
+-# Edit some docs, the <a href="http://www.stack.nl/~dimitri/doxygen/manual.html">doxygen manual</a> is helpful
+-# Point doxywizard at the source dir: your source code directory ie "copasi_api" 
+-# Point doxywizard at the destination directory: your directory for docs ie "copasi_api_docs" 
 -# Run Doxygen and Show HTML output to check the results
-
--# commit and push to github
+-# Go to the copasi_api_docs dir and add any new files that were created
+\code
+git add .
+\endcode
+-# To publish the docs: commit and push to github
 \code
 git commit
-git push --progress  "gh-pages" gh-pages:remotes/origin/gh-pages
+git push --progress  "gh-pages" gh-pages:gh-pages
 
 \endcode
 
