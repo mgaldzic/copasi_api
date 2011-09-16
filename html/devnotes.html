@@ -69,18 +69,36 @@ Checkout Instructions</h2>
 <li>When you need to update <div class="fragment"><pre class="fragment">$ git pull
 </pre></div></li>
 </ol>
-<h2><a class="anchor" id="sec_checkout"></a>
-Checkout Instructions</h2>
+<h2><a class="anchor" id="sec_checkin"></a>
+Checkin Instructions</h2>
 <ol type="1">
 <li>After you make a change commit and write a comment <div class="fragment"><pre class="fragment"> git commit
 </pre></div></li>
-</ol>
-<ol type="1">
-<li>If you want to update the github (remote) repo <div class="fragment"><pre class="fragment"> git push remote
+<li>If you want to update the github (remote) repo with your own code <div class="fragment"><pre class="fragment"> git push --progress <span class="stringliteral">&quot;origin&quot;</span> master:master
 </pre></div></li>
 </ol>
 <h2><a class="anchor" id="doc_sec"></a>
 Documentation</h2>
+<ol type="1">
+<li>Create a directory for docs ie "copasi_api_docs" (outside of your git source repo dir)</li>
+<li>got to that directory we're going to make it into your gh-pages branch for doc publication <div class="fragment"><pre class="fragment">git init
+</pre></div></li>
+</ol>
+<ol type="1">
+<li>in your git command line (ie git-bash) run fetch like this <div class="fragment"><pre class="fragment">git fetch  https:<span class="comment">//mgaldzic@github.com/mgaldzic/copasi_api.git gh-pages:refs/remotes/origin/gh-pages</span>
+</pre></div></li>
+</ol>
+<ol type="1">
+<li>edit some docs</li>
+<li>In doxy-wizard open copasi_api/doxy_config/config.Doxyfile</li>
+<li>point the Destination Directory at your</li>
+<li>Run Doxygen and Show HTML output to check the results</li>
+</ol>
+<ol type="1">
+<li>commit and push to github <div class="fragment"><pre class="fragment">git commit
+git push --progress  <span class="stringliteral">&quot;gh-pages&quot;</span> gh-pages:remotes/origin/gh-pages
+</pre></div></li>
+</ol>
 <h2><a class="anchor" id="sec_dl"></a>
 Download without SCM</h2>
  
@@ -117,7 +135,7 @@ Required Libraries:</h2>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Thu Sep 15 2011 18:16:48 for copasi API by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Thu Sep 15 2011 18:29:27 for copasi API by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </small></address>
 </body>
